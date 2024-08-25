@@ -14,7 +14,7 @@ fn main() {
 
 
     //tupple
-    let emp_info:(&str,u8) = ("Ramesh",50);
+    let emp_info:(&str,u8) = ("Aakash",50);
     let emp_name = emp_info.0;
     let emp_age= emp_info.1;
 
@@ -22,5 +22,18 @@ fn main() {
     //destructuring
     let (employee_name,employee_age)=emp_info;
     println!("Employee name is{}{}",emp_name,emp_age);
-    println!("Employee details{}{}",employee_name, employee_age)
+    println!("Employee details{}{}",employee_name, employee_age);
+    print_value(5);
+    let num1:u8=10;
+    let num2:u8=20;
+    let result:u8 = add(num1 ,num2);
+    println!("The sum of num1 and num2 is{}",result);
+}
+
+fn print_value(item:u8){
+    println!("{}",item);
+}
+
+fn add(item1:u8, item2:u8)->u8{
+    return item1+item2;
 }
